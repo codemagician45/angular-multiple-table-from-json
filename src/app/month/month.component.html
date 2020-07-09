@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row" style="margin-top: 30px;margin-bottom: 10px;">
+        <div style="margin:auto;font-weight: 600;">
+            <a class="previous round" (click)="previousYear()">&#8249;</a>
+            <span style="padding: 10px;">{{year}}</span>
+            <a class="next round" (click)="nextYear()">&#8250;</a>
+        </div>
+    </div>
+    <div class="top-table">
+        <div class="month-patient-group">
+            <div style="height: 20px; width: 0;"></div>
+            <div *ngFor="let month of months" class="patient" id="mark_{{ month }}">
+            </div>
+        </div>
+        <div class="top-month-group">
+            <div *ngFor="let month of months" class="month">{{ month }}</div>
+        </div>
+        <div class="month-patient-group">
+            <div style="height: 500px; width: 0;"></div>
+            <div *ngFor="let month of months" class="patient" id="{{ month }}"></div>
+        </div>
+    </div>
+    <app-bottom-bar></app-bottom-bar>
+</div>

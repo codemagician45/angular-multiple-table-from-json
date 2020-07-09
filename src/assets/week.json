@@ -1,0 +1,85 @@
+[
+    {
+        "id": "5efc5e434b914dd5507971e2",
+        "patientId": 0,
+        "treatment": [
+            {
+                "id": 0,
+                "week": 3,
+                "name": "clinic"
+            },
+            {
+                "id": 1,
+                "week": 10,
+                "name": "labs"
+            },
+            {
+                "id": 2,
+                "week": 9,
+                "name": "pathology"
+            }
+        ],
+        "isActive": true
+    },
+    {
+        "id": "5efc5e43581864ec193b3621",
+        "patientId": 1,
+        "treatment": [
+            [
+                {
+                    "id": 0,
+                    "week": 8,
+                    "name": "ecare"
+                },
+                {
+                    "id": 1,
+                    "week": 8,
+                    "name": "radiology"
+                },
+                {
+                    "id": 2,
+                    "week": 8,
+                    "name": "endoscopy"
+                }
+            ],
+            {
+                "id": 0,
+                "week": 10,
+                "name": "surgery"
+            },
+            {
+                "id": 1,
+                "week": 2,
+                "name": "post-sugnery-self-assessment"
+            },
+            {
+                "id": 2,
+                "week": 4,
+                "name": "my-menu"
+            }
+        ],
+        "isActive": true
+    },
+    {
+        "id": "5efc5e432e34f7c7e95f48c6",
+        "patientId": 2,
+        "treatment": [
+            {
+                "id": 0,
+                "week": 2,
+                "name": "my-menu"
+            },
+            {
+                "id": 1,
+                "week": 7,
+                "name": "surgery"
+            },
+            {
+                "id": 2,
+                "week": 5,
+                "name": "labs"
+            }
+        ],
+        "isActive": false
+    }
+]

@@ -1,0 +1,23 @@
+<div class="container">
+    <div style="margin-top: 30px;">
+        <mat-form-field appearance="fill">
+            <mat-label>Parent ID</mat-label>
+            <mat-select (selectionChange)="OnSelect($event)">
+                <mat-option *ngFor="let parent of data" [value]="parent.patientId">
+                    {{parent.patientId}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="top-table">
+        <div class="top-week-group">
+            <div class="week">Now</div>
+            <div *ngFor="let week of weeks" class="week">{{ week }}</div>
+        </div>
+        <div class="week-patient-group">
+            <div class="patient" style="height: 500px;" id="0"></div>
+            <div *ngFor="let week of weeks" class="patient" id="{{ week }}"></div>
+        </div>
+    </div>
+    <app-bottom-bar></app-bottom-bar>
+</div>

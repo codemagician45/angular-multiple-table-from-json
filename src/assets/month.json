@@ -1,0 +1,46 @@
+{
+    "care_pathway_activities": [
+        {
+            "date": "2018-01-08 20:10:10",
+            "activity_definition_id": "",
+            "treatment": {
+                "id": "4",
+                "type": "clinic",
+                "reference_id": "interval_0",
+                "status": "INITIAL"
+            }
+        },
+        {
+            "date": "2019-07-08 20:10:10",
+            "activity_definition_id": "",
+            "treatment": [
+                {
+                    "id": "2",
+                    "type": "clinic",
+                    "reference_id": "interval_0",
+                    "status": "INITIAL"
+                },
+                {
+                    "id": "3",
+                    "type": "labs",
+                    "reference_id": "interval_0",
+                    "status": "INITIAL"
+                }
+            ]
+        },
+        {
+            "date": "2020-09-11 20:10:10",
+            "activity_definition_id": "",
+            "treatment": {
+                "id": "4",
+                "type": "clinic",
+                "reference_id": "interval_0",
+                "status": "INITIAL"
+            }
+        }
+    ],
+    "version": 10.0,
+    "interval_type": "MONTHLY",
+    "id": "ucla-1",
+    "scenario_i": ""
+}

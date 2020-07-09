@@ -1,0 +1,35 @@
+.bottom {
+    margin-top: 30px;
+    background: gainsboro;
+}
+
+.bottom-element
+{
+    display: flex;
+    padding: 10px;
+}
+.bottom-text
+{
+    margin: 0; 
+    font-weight: 600; 
+    padding-left: 10px;
+}
+.clinic {
+    color: #D6578B;
+}
+.labs {
+    color:#8E5B9A;
+}
+.endoscopy {
+    color:#D6578B;
+}
+.ecare {
+    color:#8E5B9A;
+}
+.other {
+    color:#999999;
+}
+.bottom-img
+{
+    height: 24px;
+}
