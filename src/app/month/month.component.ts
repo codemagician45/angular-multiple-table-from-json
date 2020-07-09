@@ -101,56 +101,52 @@ export class MonthComponent implements OnInit {
           case 'clinic':
             this.addedElement = `<img src='../../assets/icons/line.png'><img class="icon" style="cursor: pointer" src='../../assets/icons/clinic/clinic@3x.png'>`;
             document.getElementById(this.currentMonth).innerHTML += this.addedElement;
-            document.getElementById(`mark_${this.currentMonth}`).innerHTML += '<i class="fa fa-sort-desc" aria-hidden="true"></i>';
             break;
           case 'labs':
             this.addedElement = `<img src='../../assets/icons/line.png'><img class="icon" style="cursor: pointer" src='../../assets/icons/labs/labs@3x.png'>`;
             document.getElementById(this.currentMonth).innerHTML += this.addedElement;
-            document.getElementById(`mark_${this.currentMonth}`).innerHTML += '<i class="fa fa-sort-desc" aria-hidden="true"></i>';
             break;
           case 'radiology':
             this.addedElement = `<img src='../../assets/icons/line.png'><img class="icon" style="cursor: pointer" src='../../assets/icons/radiology/radiology@3x.png'>`;
             document.getElementById(this.currentMonth).innerHTML += this.addedElement;
-            document.getElementById(`mark_${this.currentMonth}`).innerHTML += '<i class="fa fa-sort-desc" aria-hidden="true"></i>';
             break;
           case 'pathology':
             this.addedElement = `<img src='../../assets/icons/line.png'><img class="icon" style="cursor: pointer" src='../../assets/icons/pathology/pathology@3x.png'>`;
             document.getElementById(this.currentMonth).innerHTML += this.addedElement;
-            document.getElementById(`mark_${this.currentMonth}`).innerHTML += '<i class="fa fa-sort-desc" aria-hidden="true"></i>';
             break;
           case 'endoscopy':
             this.addedElement = `<img src='../../assets/icons/line.png'><img class="icon" style="cursor: pointer" src='../../assets/icons/endoscopy/endoscopy@3x.png'>`;
             document.getElementById(this.currentMonth).innerHTML += this.addedElement;
-            document.getElementById(`mark_${this.currentMonth}`).innerHTML += '<i class="fa fa-sort-desc" aria-hidden="true"></i>';
             break;
           case 'ecare':
             this.addedElement = `<img src='../../assets/icons/line.png'><img class="icon" style="cursor: pointer" src='../../assets/icons/line.png'><img src='../../assets/icons/ecare/ecare@3x.png'>`;
             document.getElementById(this.currentMonth).innerHTML += this.addedElement;
-            document.getElementById(`mark_${this.currentMonth}`).innerHTML += '<i class="fa fa-sort-desc" aria-hidden="true"></i>';
             break;
           case 'my-coach':
             this.addedElement = `<img src='../../assets/icons/line.png'><img class="icon" style="cursor: pointer" src='../../assets/icons/my-coach/my-coach@3x.png'>`;
             document.getElementById(this.currentMonth).innerHTML += this.addedElement;
-            document.getElementById(`mark_${this.currentMonth}`).innerHTML += '<i class="fa fa-sort-desc" aria-hidden="true"></i>';
             break;
           case 'surgery':
             this.addedElement = `<img src='../../assets/icons/line.png'><img class="icon" style="cursor: pointer" src='../../assets/icons/surgery/surgery@3x.png'>`;
             document.getElementById(this.currentMonth).innerHTML += this.addedElement;
-            document.getElementById(`mark_${this.currentMonth}`).innerHTML += '<i class="fa fa-sort-desc" aria-hidden="true"></i>';
             break;
           case 'post-sugnery-self-assessment':
             this.addedElement = `<img src='../../assets/icons/line.png'><img class="icon" style="cursor: pointer" src='../../assets/icons/post-sugnery-self-assessment/post-sugnery-self-assessment@3x.png'>`;
             document.getElementById(this.currentMonth).innerHTML += this.addedElement;
-            document.getElementById(`mark_${this.currentMonth}`).innerHTML += '<i class="fa fa-sort-desc" aria-hidden="true"></i>';
             break;
           case 'my-menu':
             this.addedElement = `<img src='../../assets/icons/line.png'><img class="icon" style="cursor: pointer" src='../../assets/icons/my-menu/my-menu@3x.png'>`;
             document.getElementById(this.currentMonth).innerHTML += this.addedElement;
-            document.getElementById(`mark_${this.currentMonth}`).innerHTML += '<i class="fa fa-sort-desc" aria-hidden="true"></i>';
             break;
         }
       }
     }
+
+    let today = new Date();
+    let thisMonthNum = today.getMonth() + 1;
+    let thisMonth = this.months[thisMonthNum - 1];
+
+    document.getElementById(`mark_${thisMonth}`).innerHTML += '<i class="fa fa-sort-desc" aria-hidden="true"></i>';
 
     let icons = document.getElementsByClassName('icon');
     for (let i = 0; i < icons.length; i++) {
